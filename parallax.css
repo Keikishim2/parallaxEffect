@@ -1,0 +1,21 @@
+.parallax-slide {
+    height: 100vh;
+}
+.content-slide {
+    height: 100vh;
+    text-align: center;
+}
+#content1{
+    background-image: url('code.gif');
+    background-size: contain;
+}
+h1 {
+    padding-top: 10%;
+}
+#parallax1 {
+    background: url('witch.gif') no-repeat;
+    background-size: cover;
+}
+h1{
+    color: yellow;
+}

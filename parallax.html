@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="parallax.css">
+    <script type="text/javascript" src= "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+  var initScrollTop = $(window).scrollTop();
+  $(parallax1).css({'background-position-y' : (initScrollTop/75)+'%'});
+  
+  $(window).scroll(function() {    
+    var scrollTop = $(window).scrollTop();
+    $(parallax1).css({'background-position-y' : (scrollTop/75)+'%'});
+    
+  });
+  
+});
+    </script>
+</head>
+<body>
+    <div id="parallax1" class="parallax-slide"></div>
+        <div id="content1" class="content-slide">
+        <h1>PARALLAX EFFECT FOR JQUERY</h1>
+        </div>
+
+</body>
+</html>
